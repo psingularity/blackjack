@@ -4,5 +4,3 @@ require_relative 'start'
 
 game = Game.new
 game.start
-
-

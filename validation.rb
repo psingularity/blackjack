@@ -37,13 +37,5 @@ module Validation
     def validate_presence(var_validation, _)
       raise 'Значение не должно быть nil или пустой строкой' if ['', nil].include? var_validation
     end
-
-    #     def validate_format(var_validation, format)
-    #       raise 'Значение не соответствует заданному формату' if var_validation !~ format
-    #     end
-    #
-    #     def validate_type(var_validation, type)
-    #       raise 'Значение не соответствует заданному типу' unless var_validation.is_a? type
-    #     end
   end
 end

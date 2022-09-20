@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 class Deck
+  # rubocop:disable Metrics/MethodLength
   def initialize
     @faces = [2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K', 'A']
-    # @faces = [2,'K','A']
     @suits = ['♦ ', '♠ ', '♥ ', '♣ ']
     @cards = []
 
@@ -23,6 +23,7 @@ class Deck
     @cards.shuffle!
   end
 
+  # rubocop:enable Metrics/MethodLength
   def deal(num, player)
     num.times { @cards.shift.generate_card(player) }
   end
